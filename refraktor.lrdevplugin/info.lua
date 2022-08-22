@@ -7,8 +7,8 @@ Information for the Refraktor ExifTool Plug-in
 ---------------------------------------------------------------------------]]
 pluginMajor = 0
 pluginMinor = 0
-pluginRev = 1
-pluginBuild = 20220816
+pluginRev = 5
+pluginBuild = 20220821
 
 pluginVersion = pluginMajor .. '.' .. pluginMinor .. '.' ..pluginRev .. '.' .. pluginBuild
 
@@ -16,7 +16,7 @@ pluginVersion = pluginMajor .. '.' .. pluginMinor .. '.' ..pluginRev .. '.' .. p
 
 return {
   LrSdkVersion            = 11.0,  
-  --LrSdkMinimumVersion     = 3.0,
+  LrSdkMinimumVersion     = 3.0,
   LrToolkitIdentifier     = "org.refraktor.lightroom",
   LrPluginName            = "Refraktor Exif Plugin",
   LrPluginInfoUrl         = "https://refraktor.org/",

@@ -1,6 +1,8 @@
 --[[-------------------------------------------------------------------------
 Refraktor.lua
 
+This file is part of Refraktor Lightroom Plugin
+Copyright(c) 2022 Cassie Wintermute
 
 
 ---------------------------------------------------------------------------]]
