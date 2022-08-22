@@ -1,6 +1,9 @@
 --[[----------------------------------------------------------------------------
 info.lua
 
+This file is part of Refraktor Lightroom Plugin
+Copyright(c) 2022 Cassie Wintermute
+
 Information for the Refraktor ExifTool Plug-in
 
 
