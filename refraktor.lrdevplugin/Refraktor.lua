@@ -266,8 +266,8 @@ Field 4 - Min F-Number in the Max Focal Length]],
       },
       f:edit_field { 
         fill_horizontal = 0,
-       width_in_chars = 4,
-       value = bind( "maxAperture" ),
+        width_in_chars = 3,
+        value = bind( "maxAperture" ),
       },
       f:static_text {
         title = "Min Aperture:", alignment = "left",
@@ -275,8 +275,8 @@ Field 4 - Min F-Number in the Max Focal Length]],
       },
       f:edit_field { 
         fill_horizontal = 0,
-       width_in_chars = 4,
-       value = bind( "minAperture" ),
+        width_in_chars = 3,
+        value = bind( "minAperture" ),
       },
     }, -- End Max and Min Aperture
 
@@ -288,7 +288,7 @@ Field 4 - Min F-Number in the Max Focal Length]],
       },
       f:edit_field { 
         fill_horizontal = 0,
-        width_in_chars = 16,
+        width_in_chars = 12,
         value = bind( "lensSerialNumber" ),
       },  
     }, -- End Lens Serial #
