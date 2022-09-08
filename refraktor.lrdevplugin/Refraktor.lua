@@ -336,7 +336,9 @@ Field 4 - Min F-Number in the Max Focal Length]],
       bind_to_object = props,
       f:checkbox {
         title = "Use a filelist?",
-        tooltip = "Useful when dealing with large number of files.\nGets around windows limitations",
+        tooltip = [[When enabled, Refraktor will use a temp file list for your files.
+Useful for dealing with a large number of files and getting around Windows limitations
+Especially useful for dealing with foreign characters in filenames]],
         value = bind ( "useFileList" ),
       },
       f:push_button {
@@ -345,7 +347,15 @@ Field 4 - Min F-Number in the Max Focal Length]],
         tooltip = "Please make sure command is up to date before using",
         enabled = true,
         action = function()
-          return nil
+          LrTasks.startAsyncTask( function()
+            props.statusText = "Status - Starting command"
+            if WIN_ENV == true then
+              exitCode = LrTasks.execute( "notepad.exe " .. props.fileList )
+            elseif MAC_ENV == true then
+              -- TODO #1 Add support for macOS file list viewing
+            end              
+          end
+        )
         end
       }
     }, -- end Use fileList and show fileList buttons
